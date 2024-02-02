@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import Home from './paginas/home/home';
 import './App.css';
 
