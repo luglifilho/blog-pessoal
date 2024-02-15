@@ -31,9 +31,12 @@ function Home(){
         <p> O valor atual é : {completed}</p>
         <div className='btnCont'>
         <button onClick={handleClickMais} className='btn'>+ 1</button>
-             <p></p>
         <button onClick={handleClickMenos} className='btn'>- 1</button>
+        
         </div>
+        <br />
+        <br />
+        <button onClick={() => setCompleted(0)} className='btn'>Zerar</button>
      </div>
     );
 }
