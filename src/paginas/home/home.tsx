@@ -29,7 +29,7 @@ function Home(){
         <h3>{tarefa}</h3>
         <p>Você precisa chegar em 5 para concluir a Tarefa</p>
         <p> O valor atual é : {completed}</p>
-        <div className='btnCont'>
+        <div className='button'>
         <button onClick={handleClickMais} className='btn'>+ 1</button>
         <button onClick={handleClickMenos} className='btn'>- 1</button>
         
