@@ -2,6 +2,7 @@
 
 import Welcome from './paginas/welcome';
 import './output.css';
+import './App.css'
 
 
 
