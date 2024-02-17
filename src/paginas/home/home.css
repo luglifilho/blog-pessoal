@@ -1,7 +1,6 @@
 .titulo{
     color: blue;
     text-align: center;
-
 }
 
 .img{
@@ -9,12 +8,4 @@
     height: 500px;
     display: block;
     margin: 0 auto;
-}
-.btnCont{
-    display: flex;
-    justify-content: space-around;
-}
-.btn{
-    margin-right: 10px;
-    font-size: 20px;
 }

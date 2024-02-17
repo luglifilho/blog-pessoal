@@ -1,8 +1,8 @@
 //import React from 'react';
-
-import Welcome from './paginas/welcome';
-import './output.css';
 import './App.css'
+import Home from './paginas/home/home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './paginas/login/login';
 
 
 
@@ -10,18 +10,22 @@ function App(){
 
   
     return (
-      <div>
-        <h1 className="text-3xl font-bold text-red-500 underline text-center">
-          Hello Word
-        </h1>
-      <Welcome/>
-    </div> 
+      <>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/home' element={<Home />} />
+      </Routes>
+      </BrowserRouter>
+    </> 
   
   )}
+
+
+  export default App;
         
    
     
 
 
-
-export default App;

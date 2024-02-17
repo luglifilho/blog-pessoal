@@ -1,4 +1,4 @@
-import './home/home.css'
+/*import './home/home.css'
 import { useState } from 'react';
 import Home from './home/home';
 
@@ -69,4 +69,5 @@ function Welcome(){
         </>
     )
 }
-export default Welcome; 
+
+*/
