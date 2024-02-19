@@ -1,37 +1,28 @@
 //import React from 'react';
-import './App.css'
-import Home from './paginas/home/home';
+import UserProvider from './contexts/UserContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './components/NavBar/Login';
-import Navbar from './components/NavBar/NavBar';
-import Footer from './components/footer/footer';
+import Home from './paginas/home/home';
+import Login from './paginas/login/login';
 
 
+function App() {
 
-function App(){
-
-  
-    return (
-      <>
+  return (
+    <UserProvider>
       <BrowserRouter>
-        <Navbar />
-          <div className='min-h-[80vh]'>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/home" element={<Home />} />
-            </Routes>
-          </div>
-          <Footer />
-        </BrowserRouter>
-    </> 
-  
-  )}
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
 
+      </BrowserRouter>
 
-  export default App;
-        
-   
+    </UserProvider>
+  );
+}
+
+export default App;
     
 
 
