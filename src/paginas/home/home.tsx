@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 import { Link, useNavigate } from 'react-router-dom';
 
+
 function Home() {
   const { nome, setNome } = useContext(UserContext);
 

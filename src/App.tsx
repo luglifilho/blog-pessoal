@@ -1,28 +1,33 @@
 //import React from 'react';
-import UserProvider from './contexts/UserContext';
+import './App.css';
+
+import Navbar from './components/NavBar/NavBar';
+import Footer from './components/footer/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './paginas/home/home';
 import Login from './paginas/login/login';
+import Cadastro from './paginas/cadastro/Cadastro';
+import Home from './paginas/home/home';
+import { AuthProvider } from './contexts/AuthContext';
 
 
 function App() {
-
   return (
-    <UserProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-        </Routes>
-
-      </BrowserRouter>
-
-    </UserProvider>
+    <>
+      <AuthProvider> 
+        <BrowserRouter>
+          <Navbar />
+          <div className='min-h-[80vh]'>
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
+        </AuthProvider>
+    </>
   );
 }
-
 export default App;
-    
-
-
