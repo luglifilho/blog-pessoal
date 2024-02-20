@@ -38,7 +38,8 @@ function login(e: ChangeEvent<HTMLFormElement>) {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold ">
+      <div className="flex justify-center items-center w-full h-screen principal">
+      <div className="flex justify-center items-center w-full h-full place-items-center font-bold ">
         <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
           <h2 className="text-slate-900 text-5xl ">Entrar</h2>
           <div className="flex flex-col w-full">
@@ -86,6 +87,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
           </p>
         </form>
         <div className="fundoLogin hidden lg:block"></div>
+      </div>
       </div>
     </>
   );
