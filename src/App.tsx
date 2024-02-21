@@ -10,6 +10,7 @@ import Home from './paginas/home/home';
 import { AuthProvider } from './contexts/AuthContext';
 import ListaTemas from './components/temas/listaTemas/listaTemas';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
+import DeletarTema from  './components/temas/deletarTema/DeletarTema';
 
 
 
@@ -28,6 +29,7 @@ function App() {
               <Route path='/temas' element={<ListaTemas/>} />
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
+              <Route path="/deletarTema/:id" element={<DeletarTema />} />
             </Routes>
           </div>
           <Footer />
