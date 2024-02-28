@@ -15,6 +15,7 @@ import ListaPostagens from './components/postagens/ListaPostagens/ListaPostagens
 import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem';
 import DeletarPostagem from './components/postagens/DeletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
